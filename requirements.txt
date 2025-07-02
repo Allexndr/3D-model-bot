@@ -1,0 +1,15 @@
+python-telegram-bot==20.7
+telethon
+transformers==4.36.0
+Pillow==10.1.0
+numpy==1.26.4
+aiohttp==3.9.1
+python-dotenv==1.0.0
+sentence-transformers==2.2.2
+requests==2.31.0
+psycopg2-binary==2.9.9
+firebase-admin==6.2.0
+open_clip_torch==2.24.0
+faiss-cpu>=1.7.4
+torch==2.3.0
+torchvision==0.18.0 
