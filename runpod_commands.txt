@@ -1,0 +1,26 @@
+# КОМАНДЫ ДЛЯ RUNPOD WEB TERMINAL
+# Копируйте и вставляйте по одной команде
+
+# 1. Переход в папку проекта
+cd /workspace/3D-model-bot
+
+# 2. Обновление кода
+git pull origin main
+
+# 3. Установка переменных окружения
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+
+# 4. Проверка пакетов (если нужно установить)
+pip install transformers torch torchvision pillow scikit-learn python-telegram-bot telethon aiohttp requests --no-cache-dir
+
+# 5. Быстрая проверка
+python -c "import torch; import transformers; import sklearn; print('✅ Все готово')"
+
+# 6. Запуск бота
+python bot_lite.py
+
+# АЛЬТЕРНАТИВНЫЙ БЫСТРЫЙ ЗАПУСК (если пакеты уже установлены):
+cd /workspace/3D-model-bot && git pull && python bot_lite.py 
